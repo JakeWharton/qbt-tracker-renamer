@@ -73,6 +73,8 @@ $ docker run \
     http://new.example.com/tracker \
 ```
 
+To print the actions instead of performing them, add the `--dry-run` argument.
+
 
 LICENSE
 ======
