@@ -23,7 +23,7 @@ Only two arguments are required:
  2. The new tracker URL
 
 ```
-$ docker run -d \
+$ docker run \
     jakewharton/qbt-tracker-rewriter:trunk \
     http://old.example.com/tracker \
     http://new.example.com/tracker \
@@ -52,7 +52,7 @@ services:
 Use the `--host` argument to point the script at your container.
 
 ```
-$ docker run -d \
+$ docker run \
     jakewharton/qbt-tracker-rewriter:trunk \
     --host http://qbittorrent:8080 \
     http://old.example.com/tracker \
@@ -64,7 +64,7 @@ The default username is 'admin', and the default password is 'adminadmin' which 
 If you have a non-default username or password, specify the `--user` and/or `--pass` arguments, respectively.
 
 ```
-$ docker run -d \
+$ docker run \
     jakewharton/qbt-tracker-rewriter:trunk \
     --host http://qbittorrent:8080 \
     --user jake \
