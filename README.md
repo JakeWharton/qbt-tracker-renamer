@@ -24,7 +24,7 @@ Only two arguments are required:
 
 ```
 $ docker run \
-    jakewharton/qbt-tracker-rewriter:trunk \
+    jakewharton/qbt-tracker-rewriter:1 \
     http://old.example.com/tracker \
     http://new.example.com/tracker \
 ```
@@ -53,7 +53,7 @@ Use the `--host` argument to point the script at your container.
 
 ```
 $ docker run \
-    jakewharton/qbt-tracker-rewriter:trunk \
+    jakewharton/qbt-tracker-rewriter:1 \
     --host http://qbittorrent:8080 \
     http://old.example.com/tracker \
     http://new.example.com/tracker \
@@ -65,7 +65,7 @@ If you have a non-default username or password, specify the `--user` and/or `--p
 
 ```
 $ docker run \
-    jakewharton/qbt-tracker-rewriter:trunk \
+    jakewharton/qbt-tracker-rewriter:1 \
     --host http://qbittorrent:8080 \
     --user jake \
     --pass hunter2 \
